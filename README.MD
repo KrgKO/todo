@@ -7,7 +7,15 @@ to deploy no heroku ref: https://elements.heroku.com/buildpacks/heroku/heroku-bu
   install = [ "./..." ]
   ensure = "true"
 
-## heroku command
+## heroku command -> native
 - heroku login
 - heroku create
-- git push heroku master -> to deploy
+- heroku config:set ENV=sss
+
+## heroku deploy
+- git push heroku master
+
+## heroku command -> docker
+- heroku container:login
+- heroku container:push web
+- heroku container:release web
