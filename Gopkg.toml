@@ -27,7 +27,7 @@
 [metadata.heroku]
   root-package = "github.com/KrgKo/todo"
   go-version = "go1.10.4"
-  install = [ "./main" ]
+  install = [ "./..." ]
   ensure = "true"
 
 [[constraint]]
