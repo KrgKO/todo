@@ -19,3 +19,5 @@ to deploy no heroku ref: https://elements.heroku.com/buildpacks/heroku/heroku-bu
 - heroku container:login
 - heroku container:push web
 - heroku container:release web
+
+Note: `do not set port on heroku -> it will set by itself`
