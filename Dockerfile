@@ -7,5 +7,5 @@ RUN cd /src && dep ensure && GOOS=linux GOARCH=386 go build -o goapp
 FROM alpine
 ENV PORT=$PORT
 WORKDIR /app
-COPY --form=build-env /src/goapp /app/
+COPY --from=build-env /src/goapp /app/
 CMD /app/goapp
