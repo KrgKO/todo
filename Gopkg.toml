@@ -24,8 +24,11 @@
 #   go-tests = true
 #   unused-packages = true
 
-[[root-package]]
-  name = "todo"
+[metadata.heroku]
+  root-package = "github.com/KrgKo/todo"
+  go-version = "go1.10.4"
+  install = [ "./cmd/...", "./main" ]
+  ensure = "true"
 
 [[constraint]]
   branch = "master"
