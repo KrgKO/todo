@@ -6,3 +6,8 @@ to deploy no heroku ref: https://elements.heroku.com/buildpacks/heroku/heroku-bu
   go-version = "go1.10.4"
   install = [ "./..." ]
   ensure = "true"
+
+## heroku command
+- heroku login
+- heroku create
+- git push heroku master -> to deploy
